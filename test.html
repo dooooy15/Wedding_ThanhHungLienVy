@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Đám Cưới</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* Thiết lập nền toàn trang */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('images/wedding-bg.jpg') no-repeat center center/cover; /* Đổi link ảnh nền tại đây */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+
+        /* Hộp thiệp mời */
+        .invitation-card {
+            background: rgba(255, 192, 203, 0.8); /* Màu hồng nhạt trong suốt */
+            padding: 30px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Tiêu đề lớn */
+        .invitation-card h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Nội dung chính */
+        .invitation-card p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Nút xem bản đồ */
+        .location-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #d81b60;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .location-btn:hover {
+            background: #ad1457;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <h2>Thiệp Mời Đám Cưới</h2>
+        <p><strong>Thời gian:</strong> 11h00 Ngày 18 tháng 3 năm 2025</p>
+        <p><strong>Nhằm ngày:</strong> 10 tháng 2 Âm Lịch</p>
+        <p><strong>Địa điểm:</strong> Tư gia Nhà Chú Rể</p>
+        <p><strong>Địa chỉ:</strong> Thôn 8 Gia An, Tánh Linh, Bình Thuận</p>
+        <a class="location-btn" href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank">Xem Bản Đồ</a>
+    </div>
+
+</body>
+</html>
