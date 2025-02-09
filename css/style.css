@@ -27,6 +27,244 @@ body {
     line-height: 1.80857;
 }
 
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Không ảnh hưởng đến thao tác trên trang */
+    z-index: 9999; /* Hiển thị trên tất cả nội dung */
+}
+
+.snowflake {
+    position: absolute;
+    top: -50px; /* Xuất hiện từ trên cùng */
+    width: 30px; /* Kích thước mặc định */
+    height: 30px;
+    opacity: 0.9; /* Làm trong suốt nhẹ */
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+.snow-container1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Không ảnh hưởng đến thao tác trên trang */
+    z-index: 9999; /* Hiển thị trên tất cả nội dung */
+}
+
+.snowflake1 {
+    position: absolute;
+    top: -50px; /* Xuất hiện từ trên cùng */
+    width: 30px; /* Kích thước mặc định */
+    height: 30px;
+    opacity: 0.9; /* Làm trong suốt nhẹ */
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+/* Tạo hiệu ứng hoa hồng rơi */
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Rơi từ trên xuống */
+    }
+}
+
+#music-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #d81b60; /* Màu hồng */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    z-index: 9999;
+}
+
+#music-button:hover {
+    background-color: #b21850; /* Màu hồng đậm hơn khi hover */
+}
+
+.event-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-img img {
+    width: 100%;
+    height: auto;
+}
+
+.event-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 192, 203, 0.8);
+    padding: 1vw;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Font size thay đổi theo màn hình nhưng không quá lớn */
+.event-content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(20px, 3vw, 32px); /* Kích thước chữ tối thiểu 20px, tối đa 35px */
+    margin-bottom: 10px;
+}
+.event-content p {
+    font-size: clamp(14px, 2vw, 22px);
+    margin: 5px 0;
+}
+
+/* Nút bấm */
+.event-btn {
+    display: inline-block;
+    background: #d81b60;
+    color: white;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-size: clamp(5px, 1.5vw, 14px);
+}
+
+.event-btn:hover {
+    background: #b21850;
+}
+
+/* Điều chỉnh cho màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+    .event-content {
+        width: 90%;
+        padding: 3vw;
+    }
+    .event-content h2 {
+        font-size: clamp(18px, 5vw, 28px);
+    }
+    .event-content p {
+        font-size: clamp(12px, 3.5vw, 20px);
+    }
+    .event-btn {
+        font-size: clamp(10px, 2.5vw, 14px) !important; /* Giảm kích thước chữ */
+        padding: 5px; /* Giảm padding để nút gọn hơn */
+    }
+    
+}
+
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Khung chứa mỗi phần quà */
+.gift-box {
+    background: #FFC0CB;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* QR đặt bên phải */
+.qr-box {
+    width: 120px; /* Tăng kích thước QR code */
+    padding-right: 20px;
+    padding-left: -50px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.qr-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Nội dung thông tin tài khoản */
+.gift-content {
+    text-align: left;
+    flex: 1;
+    padding-right: 5px; /* Giảm khoảng cách với QR */
+}
+
+
+/* Số tài khoản + nút Copy cùng hàng */
+.account-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Nút Copy */
+.copy-btn {
+    background: #ff4081;
+    border: none;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #e91e63;
+}
+
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    .gift-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .qr-box {
+        margin: 10px auto 0;
+    }
+
+    .gift-content {
+        text-align: center;
+    }
+
+    .account-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .copy-btn {
+        margin-left: 10px;
+    }
+}
+
 
 a {
     color: #1f1f1f;
@@ -324,7 +562,13 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .top-header .navbar{
-	padding: 5px 0px;
+	padding: 0px 0px;
+}
+
+.top-header .navbar strong{
+    color: #DD666C;
+    font-family: 'Marck Script', cursive;
+    
 }
 
 .top-header .navbar .navbar-collapse ul li a{
@@ -334,12 +578,12 @@ button:focus{
 }
 
 .top-header .navbar .navbar-collapse ul li a.active{
-	background: #dd666c;
+	background: #FFC0CB;
 	color: #ffffff;
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover{
-	background: #63c7bd;
+	background: #dd666c;
 	color: #ffffff;
 }
 
@@ -359,7 +603,7 @@ button:focus{
 }
 
 .navbar-toggler{
-	border: 1px solid #61D2B4;
+	border: 1px solid coral;
 	border-radius: 0;
 	margin: 16px 15px;
 	padding: 10px 10px;
@@ -369,7 +613,7 @@ button:focus{
 	transition: all 0.2s linear;
 }
 .navbar-toggler span{
-	background: #61D2B4;
+	background: coral;
 	display: block;
 	width: 25px;
 	height: 2px;
@@ -481,11 +725,12 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .about-box{
-	padding: 50px 0px;
+	padding: 20px 0px;
 }
 
 .title-box{
 	text-align: center;
+    padding-top: 20px;
 	margin-bottom: 30px;
 }
 .title-box h2{
@@ -498,7 +743,8 @@ button:focus{
 	text-decoration: underline;
 }
 .about-main-info h2{
-    padding: 10px 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
 	font-size: 40px;
 	font-family: 'Dancing Script', cursive;
 }
@@ -613,7 +859,7 @@ button:focus{
 -------------------------------------------------------------------*/
 
 .family-box{
-	padding: 70px 0px;
+	padding: 20px 0px;
 }
 
 .single-team-member {
