@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>The Real Wedding - Responsive OnePage HTML5 Template</title>  
+    <title>Wedding of Hùng and Vy</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,7 +32,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
@@ -43,12 +44,26 @@
 		</div>
     </div><!-- end loader -->
     <!-- END LOADER -->
+		
+	<div class="snow-container"></div>
+	<div class="snow-container1"></div>
 	
+	<audio id="background-music" loop>
+		<source src="audio/Maroon 5 - Sugar (Lyrics) - 7clouds.mp3" type="audio/mpeg">
+	</audio>
+	
+	<audio id="background-music" loop>
+		<source src="audio/Maroon 5 - Sugar (Lyrics) - 7clouds.mp3" type="audio/mpeg">
+	</audio>
+	
+	<button id="music-button" onclick="toggleMusic()">🔇</button>
+	    
+		
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-				<a class="navbar-brand" href="index.html"><p>THANH HÙNG & LIÊN VY</p></a>
+				<a class="navbar-brand" href="index.html"><strong>Thanh Hùng &  Liên Vy</strong></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
@@ -56,10 +71,11 @@
 				</button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#about">About Us</a></li>						
-                        <li><a class="nav-link" href="#events">Events</a></li>
-                        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li><a class="nav-link active" href="#home">Đám Cưới</a></li>
+                        <li><a class="nav-link" href="#about">Chúng tớ</a></li>						
+                        <li><a class="nav-link" href="#family">Thời gian</a></li>
+                        <li><a class="nav-link" href="#gallery">Kỉ niệm</a></li>
+						<li><a class="nav-link" href="#events">Món quà</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +93,7 @@
 							<div class="lbox-details">
 								<h1>Thanh Hùng & Liên Vy</h1>
 								<h2>We're getting married</h3>
-								<p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p>
+								<!-- <p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p> -->
 								<!-- <a href="#" class="btn ">Contact</a> -->
 							</div>
 						</div>
@@ -87,7 +103,7 @@
 							<div class="lbox-details">
 								<h1>Thanh Hùng & Liên Vy</h1>
 								<h2>We're getting married</h3>
-								<p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p>
+								<!-- <p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p> -->
 								<!-- <a href="#" class="btn ">Contact</a> -->
 							</div>
 						</div>
@@ -97,7 +113,7 @@
 							<div class="lbox-details">
 								<h1>Thanh Hùng & Liên Vy</h1>
 								<h2>We're getting married</h3>
-								<p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p>
+								<!-- <p>Vào: <strong>Ngày 8 Tháng 3 Năm 2025</strong></p> -->
 								<!-- <a href="#" class="btn ">Contact</a> -->
 							</div>
 						</div>
@@ -109,50 +125,6 @@
 	</div>
 	<!-- End Banner -->
 	
-	<!-- 
-	<div id="about" class="about-box">
-		<div class="about-a1">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="title-box">
-							<h2>Thân mời Bạn đến chung vui cùng:</h2>
-							
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="row align-items-center about-main-info">
-							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> Cô Dâu <span>Đinh Thị Liên Vy</span></h2>
-								<p>Trưởng nữ </p>
-								<p>Là một cô gái yêu chú rể hết mình</p>
-							</div>
-							<div class="col-lg-4 col-md-6 col-sm-12">
-								<div class="about-img">
-									<img class="img-fluid rounded" src="images/codau.jpg" alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="row align-items-center about-main-info">
-							<div class="col-lg-4 col-md-6 col-sm-12">
-								<div class="about-img">
-									<img class="img-fluid rounded" src="images/chure.jpg" alt="" />
-								</div>
-							</div>
-							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> Chú rể <span>Bùi Thanh Hùng</span></h2>
-								<p>Trưởng Nam <br> Rất yêu cô dâu</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	 -->
-
 	<div id="about" class="about-box">
 		<div class="about-a1">
 			<div class="container">
@@ -186,207 +158,54 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<!-- Start Events -->
-	<div id="events" class="events-box";>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Tại:</h2>
-						<!-- <p>11h00, Ngày 8 tháng 3 năm 20 </p> -->
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="row justify-content-center" style="background-image:url(images/slider-02.jpg);" >
-				<div class="col-lg-10 col-md-8 col-sm-2 mx-auto d-flex justify-content-center">
-					<div class="invitation-card" >
-						<h2>Tư Gia Nhà Chú Rể</h2>
-						<p><strong>Lúc:</strong> 11h00 Ngày 18 tháng 3 năm 2025</p>
-						<p><strong>Nhằm ngày:</strong> 10 tháng 2 Âm Lịch</p>
-						<p><strong>Địa chỉ:</strong> Thôn 8 Gia An, Tánh Linh, Bình Thuận</p>
-						<a class="location-btn" href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank">Xem Bản Đồ</a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<!-- End Events -->
+	</div>	
 		
-	<!-- Start Story 
-	<div id="story" class="story-box main-timeline-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Vào Lúc:</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row timeline-element separline">
-				<div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-font">
-                            11h00 
-                        </p>
-                    </div>
-				</div>
-				<span class="iconBackground"></span>
-				<div class="col-xs-12 col-md-6 align-left">
-					<div class="timeline-text-content">
-						<h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-font">Ngày 8 tháng 3 năm 2025</h4>
-						<p class="mbr-timeline-text mbr-fonts-style display-7">
-						   Nhầm ngày 10 tháng 2 Âm Lịch
-						</p>
-					 </div>
-				</div>
-			</div>
-			<div class="row timeline-element reverse separline">
-				<div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-font">
-                            Tại Tư gia nhà Chú Rể 
-                        </p>
-                    </div>
-				</div>
-				<span class="iconBackground"></span>
-				<div class="col-xs-12 col-md-6 align-right">
-					<div class="timeline-text-content">
-						<h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-font">Địa chỉ: Thôn 8 Gia An<i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank"></a></h4>
-						<p class="mbr-timeline-text mbr-fonts-style display-7">
-							Tại Tư Gia nhà Chú Rể
-						   <i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank">
-						</p>
-					 </div>
-				</div>
-			</div>
-			<div class="row timeline-element separline">
-				<div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-font">
-                            1 May 2018  
-                        </p>
-                    </div>
-				</div>
-				<span class="iconBackground"></span>
-				<div class="col-xs-12 col-md-6 align-left">
-					<div class="timeline-text-content">
-						<h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-font">Proposal</h4>
-						<p class="mbr-timeline-text mbr-fonts-style display-7">
-						   Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit.
-						</p>
-					 </div>
-				</div>
-			</div>
-			<div class="row timeline-element reverse separline">
-				<div class="timeline-date-panel col-xs-12 col-md-6  align-left">         
-                    <div class="time-line-date-content">
-                        <p class="mbr-timeline-date mbr-fonts-style display-font">
-                            2 June 2018  
-                        </p>
-                    </div>
-				</div>
-				<span class="iconBackground"></span>
-				<div class="col-xs-12 col-md-6 align-right">
-					<div class="timeline-text-content">
-						<h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-font">Engagement</h4>
-						<p class="mbr-timeline-text mbr-fonts-style display-7">
-						   Proin tempus felis quis justo pretium interdum. Praesent sollicitudin lectus eu mattis egestas. Praesent luctus magna at dignissim placerat.
-						</p>
-					 </div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
- End Story -->
-	
-	<!-- 
+	<!-- Start Events -->
 	<div id="family" class="family-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Family</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
+						<h2>Tại:</h2>
+						<p>Sự có mặt của Bạn sẽ góp phần cho Tiệc cưới của chúng tôi thêm phần Hạnh phúc hơn rất nhiều. </p> 
+											</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-01.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Alonso Wiles </h4>
-							<p>{ Leida’s Father }</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-02.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Evon Wiles </h4>
-							<p>{ Leida’s Mother }</p>
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="event-inner">
+						<div class="event-img">
+							<img class="img-fluid" src="images/event-img-01.jpg" alt="" />
+							<div class="event-content">
+								<h2>Tư Gia Nhà Cô Dâu</h2>
+								<p><strong>Lúc:</strong> 11h00 Ngày 8 tháng 3 năm 2025</p>
+								<p><strong>Nhằm ngày:</strong> 10 tháng 2 Âm Lịch</p>
+								<p><strong>Địa chỉ:</strong> Lạc Hà, Tánh Linh, Bình Thuận</p>
+								<a class="event-btn" href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank">Xem Bản Đồ</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-03.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Chris Wiles </h4>
-							<p>{ Leida’s Brother }</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-04.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Adina Wiles </h4>
-							<p>{ Leida’s Sister }</p>
+			
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="event-inner">
+						<div class="event-img">
+							<img class="img-fluid" src="images/event-img-02.jpg" alt="" />
+							<div class="event-content">
+								<h2>Tư Gia Nhà Chú Rể</h2>
+								<p><strong>Lúc:</strong> 11h00 Ngày 9 tháng 3 năm 2025</p>
+								<p><strong>Nhằm ngày:</strong> 11 tháng 2 Âm Lịch</p>
+								<p><strong>Địa chỉ:</strong> Thôn 8 Gia An, Tánh Linh, Bình Thuận</p>
+								<a class="event-btn" href="https://maps.app.goo.gl/EijVPYgh3Z2BYzWZ7" target="_blank">Xem Bản Đồ</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-05.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Annetta Wiles </h4>
-							<p>{ Leida’s Sister }</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-team-member">
-						<div class="family-img">
-							<img class="img-fluid" src="images/family-06.jpg" alt="" />
-						</div>
-						<div class="family-info">
-							<h4>Mr. Ladonna Wiles </h4>
-							<p>{ Leida’s Sister }</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			</div>	
+			
 		</div>
 	</div>
-	 -->
+	<!-- End Events -->
 	
 	<!-- Start Gallery -->
 	<div id="gallery" class="gallery-box">
@@ -394,7 +213,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Gallery</h2>
+						<h2>Album</h2>
 						<p>Hình ảnh của Cô Dâu và chú rể </p>
 					</div>
 				</div>
@@ -455,80 +274,50 @@
 	</div>
 	<!-- End Gallery -->
 	
-	
-	
-	<!-- 
-	<div id="contact" class="contact-box">
+	<!-- Start Events -->
+	<div id="events" class="events-box";>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Contact wth us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						<h2>Món quà Tình Yêu:</h2>
+						<p>Không làm giảm sự tôn trọng, đối với những ai mong muốn thể hiện tình yêu của mình với cô dâu và chú rể, bạn có thể thực hiện điều đó thông qua:</p> 
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 col-xs-12">
-				  <div class="contact-block">
-					<form id="contactForm">
-					  <div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="guest" required data-error="Please select an item in the list.">
-								  <option disabled selected>Number Of Guest*</option>
-								  <option value="1">1</option>
-								  <option value="2">2</option>
-								  <option value="3">3</option>
-								  <option value="4">4</option>
-								  <option value="5">5</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
-								  <option disabled selected>I Am Attending*</option>
-								  <option value="1">All events</option>
-								  <option value="2">Wedding ceremony</option>
-								  <option value="3">Reception party</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
-							</div>
-						</div>
-					  </div>            
-					</form>
-				  </div>
+			
+			
+			<div class="gift-box">
+				<div class="gift-content">
+					<span class="gift-title">💝 <strong> Mừng cưới đến Chú Rể</strong></span>
+					<div class="account-info">
+						<p><strong>Lời chúc:</strong> Chúc mừng Chú Rể! <button class="copy-btn">📋</button></p>
+						
+					</div>
 				</div>
+			</div>
+	
+			<!-- Ô quà cô dâu -->
+			<div class="gift-box">
+				<div class="gift-content">
+					<span class="gift-title">💝<strong> Mừng cưới đến Cô Dâu</strong> </span>
+					<div class="account-info">
+						<p><strong>Số tài khoản:</strong> 102868826535 <button class="copy-btn">📋</button></p>                    
+					</div>
+					<p><strong>Tên tài khoản:</strong> DINH THI LIEN VY</p>
+					<p><strong>Ngân hàng:</strong> VietinBank </p>
+					<p><strong>Chi nhánh:</strong> THU DUC - PGD METRO</p>
+									
+				</div>
+				<div class="qr-box">
+					<img src="images/qrcodau.jpg" alt="QR Cô dâu" style="width: 120px; height: auto; border: 5px solid #d81b60; border-radius: 10px;">
+				</div>				
 			</div>
 		</div>
 	</div>
-	 -->
+	<!-- End Events -->
 	
+		
 	<!-- Start Footer -->
 	<footer class="footer-box">
 		<div class="container">
@@ -555,4 +344,93 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 </body>
+<script>
+    function createSnowflake() {
+        const snowflake = document.createElement("img");
+        snowflake.classList.add("snowflake");
+        // snowflake.src = "https://cdn-icons-png.flaticon.com/128/415/415682.png"; // Link ảnh hoa hồng
+		snowflake.src = "images/hoa-hong1.png"; // Đường dẫn ảnh hoa hồng trên máy
+        document.querySelector(".snow-container").appendChild(snowflake);
+
+        // Đặt vị trí ngẫu nhiên trên trang
+        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        snowflake.style.animationDuration = (Math.random() * 3 + 2) + "s"; // Ngẫu nhiên thời gian rơi
+        snowflake.style.width = (Math.random() * 20 + 20) + "px"; // Kích thước hoa ngẫu nhiên
+
+        // Xóa hoa sau khi rơi
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000);
+    }
+
+    // Tạo hoa liên tục
+    setInterval(createSnowflake, 300);
+
+	function createSnowflake1() {
+        const snowflake1 = document.createElement("img");
+        snowflake1.classList.add("snowflake1");
+        // snowflake.src = "https://cdn-icons-png.flaticon.com/128/415/415682.png"; // Link ảnh hoa hồng
+		snowflake1.src = "images/hoa-hong.png"; // Đường dẫn ảnh hoa hồng trên máy
+        document.querySelector(".snow-container1").appendChild(snowflake1);
+
+        // Đặt vị trí ngẫu nhiên trên trang
+        snowflake1.style.left = Math.random() * window.innerWidth + "px";
+        snowflake1.style.animationDuration = (Math.random() * 2 + 3) + "s"; // Ngẫu nhiên thời gian rơi
+        snowflake1.style.width = (Math.random() * 20 + 30) + "px"; // Kích thước hoa ngẫu nhiên
+
+        // Xóa hoa sau khi rơi
+        setTimeout(() => {
+            snowflake1.remove();
+        }, 5000);
+    }
+
+    // Tạo hoa liên tục
+    setInterval(createSnowflake1, 300);
+
+	
+
+	document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("background-music");
+        var button = document.getElementById("music-button");
+
+        // Cố gắng tự động phát nhạc
+        audio.play().then(() => {
+            button.textContent = "🔇 "; // Nếu phát thành công, cập nhật nút
+        }).catch(() => {
+            console.log("Trình duyệt chặn autoplay. Người dùng cần tương tác trước.");
+            button.textContent = "🎵 "; // Nếu bị chặn, nút sẽ hiển thị bật nhạc
+        });
+    });
+
+    function toggleMusic() {
+        var audio = document.getElementById("background-music");
+        var button = document.getElementById("music-button");
+
+        if (audio.paused) {
+            audio.play();
+            button.textContent = "🔇 ";
+        } else {
+            audio.pause();
+            button.textContent = "🎵 ";
+        }
+    }
+
+	// Copy dữ liệu khi bấm nút
+	document.querySelectorAll(".copy-btn").forEach((button, index) => {
+    button.addEventListener("click", () => {
+        const text = document.querySelectorAll(".account-info p")[index].innerText.replace("Số tài khoản: ", "");
+        navigator.clipboard.writeText(text).then(() => {
+            button.innerText = "✅ Copied!";
+            setTimeout(() => button.innerText = "📋 Copy", 2000);
+        });
+    });
+});
+
+</script>
+	
+
+
+
+
+
 </html>
